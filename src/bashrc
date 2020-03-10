@@ -1,0 +1,11 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# Dump core in current working directory
+ulimit -S -c unlimited > /dev/null 2>&1
+
+alias b="rm -f /bld/dabba.blend; /src/tree3/dabha/dabha.py"
+alias vi=vim
+alias e='vi -O blenderlib/blenderlib.py dabha/dabha.py'
